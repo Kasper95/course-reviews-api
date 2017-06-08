@@ -24,9 +24,7 @@ public class DatabaseLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Course course = new Course("Java", "https://teamtreehouse.com/javabasics");
-        course.addReview(new Review(3, "It was just OKAY."));
-        courses.save(course);
+
         String[] templates = {
             "Up and running with %s",
             "%s basics",
